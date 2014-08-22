@@ -84,8 +84,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "$(ProjectDir)NuGet\lib\net45\$(TargetFileName)" 2&gt;&amp;1
-copy "$(ProjectDir)$(OutDir)$(TargetName).xml" "$(ProjectDir)NuGet\lib\net45\$(TargetName).xml" 2&gt;&amp;1</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "$(ProjectDir)NuGet\lib\net45\$(TargetFileName)"
+copy "$(ProjectDir)$(TargetName).xml" "$(ProjectDir)NuGet\lib\net45\$(TargetName).xml"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
